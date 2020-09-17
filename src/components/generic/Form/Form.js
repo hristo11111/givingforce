@@ -2,7 +2,7 @@ import React from 'react';
 
 const Form = ({ onSubmit, children }) => {
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={onSubmit} className="ui form">
       {children}
     </form>
   );

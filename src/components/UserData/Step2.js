@@ -3,6 +3,7 @@ import React from 'react';
 import { useForm } from "react-hook-form";
 import Form from './../generic/Form/Form';
 import TextField from './../generic/TextField/TextField';
+import CTASection from './CTASection/CTASection';
 
 const Step2 = ({ userData, setUserData, history }) => {
   const { register, handleSubmit } = useForm();
@@ -14,9 +15,8 @@ const Step2 = ({ userData, setUserData, history }) => {
 
   return (
     <Form onSubmit={handleSubmit(onFormSubmit)}>
-      <span>Email:</span>
-      <TextField formRegister={register} defaultValue={userData.email} name="email" />
-      <input type="submit" />
+      <TextField formRegister={register} defaultValue={userData.email} name="email" label="Email:" />
+      <CTASection onBackBtnClick={() => history.goBack()} />
     </Form>
   );
 };
