@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import Form from '../../components/generic/Form/Form';
+import Form from 'components/generic/Form/Form';
 
 
 describe('test Form component', () => {

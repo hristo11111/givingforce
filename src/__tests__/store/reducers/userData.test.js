@@ -1,5 +1,5 @@
-import reducer from './../../../store/reducers/userData';
-import { setUserData } from './../../../store/actions'
+import reducer from 'store/reducers/userData';
+import { setUserData } from 'store/actions'
 
 describe('userData reducer', () => {
   it('should return the initial state no action is passed', () => {

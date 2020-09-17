@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import TextField from './../../components/generic/TextField/TextField';
+import TextField from 'components/generic/TextField/TextField';
 
 
 describe('test TextField component', () => {

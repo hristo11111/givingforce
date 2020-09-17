@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import store from './store';
+import store from 'store';
 import { BrowserRouter, Route } from 'react-router-dom';
-import Step1Container from './containers/Step1Container';
-import Step2Container from './containers/Step2Container';
-import ThankYouPageContainer from './containers/ThankYouPageContainer';
+import Step1Container from 'containers/Step1Container';
+import Step2Container from 'containers/Step2Container';
+import ThankYouPageContainer from 'containers/ThankYouPageContainer';
 
 import './index.scss';
 

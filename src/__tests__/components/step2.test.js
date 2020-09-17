@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 import { act } from 'react-dom/test-utils';
-import Step2 from '../../components/UserData/Step2';
+import Step2 from 'components/UserData/Step2';
 import 'mutationobserver-shim';
 
 
