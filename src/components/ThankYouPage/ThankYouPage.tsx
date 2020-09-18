@@ -2,7 +2,11 @@ import React, { useEffect } from 'react';
 
 import './ThankYouPage.scss';
 
-const ThankYouPage = ({ userData }) => {
+type Props = {
+  userData: object
+}
+
+const ThankYouPage = ({ userData }: Props) => {
   useEffect(() => {
     console.log(userData);
   }, [userData]);

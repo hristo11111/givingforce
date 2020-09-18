@@ -5,7 +5,7 @@ import Form from 'components/generic/Form/Form';
 
 describe('test Form component', () => {
   it('renders correctly if children are passed', () => {
-    const { container } = render(<Form><input type='text' /></Form>);
+    const { container } = render(<Form onSubmit={() => {}}><input type='text' /></Form>);
     
     expect(container.querySelector('input')).toBeTruthy();
   });

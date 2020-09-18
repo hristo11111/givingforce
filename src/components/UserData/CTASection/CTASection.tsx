@@ -2,7 +2,11 @@ import React from 'react';
 
 import './CTASection.scss';
 
-const CTASection = ({ onBackBtnClick }) => {
+type Props = {
+  onBackBtnClick?: ((event: React.MouseEvent<HTMLInputElement, MouseEvent>) => void) | undefined
+}
+
+const CTASection = ({ onBackBtnClick }: Props) => {
   return (
     <div className='cta'>
       <input type="submit" value="Submit" className="ui button primary" />

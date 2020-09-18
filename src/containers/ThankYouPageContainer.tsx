@@ -1,10 +1,14 @@
 import { connect } from 'react-redux';
-import { withRouter } from "react-router-dom";
+import { UserData } from 'interfaces';
 import ThankYouPage from 'components/ThankYouPage/ThankYouPage';
+
+type Props = {
+  userData: UserData
+}
 
 /**
  * Provides state to the ThankYouPage component
  */
-export default connect(({ userData }) => ({
+export default connect(({ userData }: Props) => ({
   userData
-}))(withRouter(ThankYouPage));
+}))(ThankYouPage);
